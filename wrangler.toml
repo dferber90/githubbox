@@ -6,7 +6,7 @@ route = ""
 zone_id = ""
 
 [site]
-bucket = "./build"
+bucket = "./src"
 entry-point = "workers-site"
 
 [env.production]

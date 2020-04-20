@@ -4,11 +4,7 @@
   "private": true,
   "dependencies": {},
   "scripts": {
-    "start": "concurrently \"yarn serve\" \"yarn build:watch\"",
-    "serve": "serve build",
-    "prebuild": "rm -rf build",
-    "build": "yarn generate-md --layout github --input ./src --output ./build",
-    "build:watch": "watch \"yarn build\" src",
+    "start": "serve src",
     "pub": "wrangler publish",
     "pub:prod": "wrangler publish --env production"
   },
