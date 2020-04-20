@@ -1,15 +1,38 @@
-# githubbox
+Quickly open any GitHub repo in CodeSandbox
 
-Open any GitHub repo in CodeSandbox
+1. Go to a repo in GitHub
+2. Replace `github.com` with `githubbox.com`
+3. There's no step three
 
-## What this site lets you do
+<p align="center">
+  <img src="./demo.gif" width="460">
+</p>
 
-When you are on GitHub and looking at a repo, you can replace `github.com` with `githubbox.com` in the URL to open that repo in [CodeSandbox](https://codesandbox.io/).
+## What
 
-## Development documentation
+Suppose you're on `github.com` looking at a repo.
+
+Now you want to explore the code of that repo in a [CodeSandbox](https://codesandbox.io/).
+
+Just add **box** to your url and the repo will open there.
+
+## Try it
+
+As you're on GitHub at the moment, you can add `box` to the current URL.
+
+You'll then see this README on CodeSandbox.
+
+```diff
+-https://github.com/dferber90/githubbox
++https://codesandbox.io/s/github/dferber90/githubbox
+```
+
+_This also works when you're on a branch, a tag or on a file's blob._
+
+## Development
 
 See [DEVELOPMENT.md](./DEVELOPMENT.md).
 
-## Who made this
+## Who
 
 [@dferber90](https://twitter.com/dferber90)
