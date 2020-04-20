@@ -15,7 +15,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "release": "wrangler publish"
+    "pub": "wrangler publish",
+    "pub:prod": "wrangler publish --env production"
   },
   "eslintConfig": {
     "extends": "react-app"
