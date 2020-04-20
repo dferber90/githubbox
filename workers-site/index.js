@@ -1,3 +1,5 @@
+import { getAssetFromKV } from "@cloudflare/kv-asset-handler";
+
 function getCodeSandboxLocation(path) {
   const prefix = "https://codesandbox.io/s/github/";
   const parts = path.substr(1).split("/");
@@ -58,6 +60,16 @@ async function handleEvent(event) {
     return Response.redirect(location, 302 /* use 301 once its working */);
   }
 
-  // redirect to landing page since wrong url was used
-  return Response.redirect("https://githubbox.com/?404", 302);
+  try {
+    let options = {};
+    if (DEBUG) {
+      // customize caching
+      options.cacheControl = {
+        bypassCache: true,
+      };
+    }
+    return await getAssetFromKV(event, options);
+  } catch (e) {
+    return new Response("Not found", { status: 404 });
+  }
 }
