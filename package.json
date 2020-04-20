@@ -2,35 +2,20 @@
   "name": "githubbox",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
-  },
+  "dependencies": {},
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "start": "concurrently \"yarn serve\" \"yarn build:watch\"",
+    "serve": "serve build",
+    "prebuild": "rm -rf build",
+    "build": "yarn generate-md --layout github --input ./src --output ./build",
+    "build:watch": "watch \"yarn build\" src",
     "pub": "wrangler publish",
     "pub:prod": "wrangler publish --env production"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "concurrently": "5.1.0",
+    "markdown-styles": "3.1.10",
+    "serve": "11.3.0",
+    "watch": "1.0.2"
   }
 }

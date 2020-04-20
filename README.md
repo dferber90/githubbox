@@ -3,8 +3,13 @@
 ## Running locally
 
 ```
-yarn dev
+yarn start
 ```
+
+## Editing the worker
+
+To edit the worker, open `workers-site/index.js`.
+The `workers-site` directory contains the Cloudflare worker.
 
 ## Building and publishing a new version
 
