@@ -5,7 +5,7 @@ Quickly open any GitHub repo in CodeSandbox
 3. There's no step three
 
 <p align="center">
-  <img src="./demo.gif" width="460">
+  <img src="./docs/demo.gif" width="460">
 </p>
 
 ## What
@@ -31,7 +31,7 @@ _This also works when you're on a branch, a tag or on a file's blob._
 
 ## Development
 
-See [DEVELOPMENT.md](./DEVELOPMENT.md).
+See [DEVELOPMENT.md](./docs/development.md).
 
 ## Who
 
