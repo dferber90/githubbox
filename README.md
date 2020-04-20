@@ -1,32 +1,15 @@
-## githubbox
+# githubbox
 
-## Running locally
+Open any GitHub repo in CodeSandbox
 
-```
-yarn start
-```
+## What this site lets you do
 
-## Editing the worker
+When you are on GitHub and looking at a repo, you can replace `github.com` with `githubbox.com` in the URL to open that repo in [CodeSandbox](https://codesandbox.io/).
 
-To edit the worker, open `workers-site/index.js`.
-The `workers-site` directory contains the Cloudflare worker.
+## Development documentation
 
-## Building and publishing a new version
+See [DEVELOPMENT.md](./DEVELOPMENT.md).
 
-You need to install [wrangler](https://github.com/cloudflare/wrangler) globally.
+## Who made this
 
-### Publishing to development
-
-```
-yarn pub
-```
-
-Then check https://githubbox.dferber.workers.dev/
-
-### Publishing to production
-
-```
-yarn pub:prod
-```
-
-Then check https://githubbox.com
+[@dferber90](https://twitter.com/dferber90)
