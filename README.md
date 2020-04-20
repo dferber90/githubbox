@@ -20,12 +20,12 @@ Just add **box** to your url and the repo will open there.
 
 As you're on GitHub at the moment, you can add `box` to the current URL.
 
-You'll then see this README on CodeSandbox.
-
 ```diff
 -https://github.com/dferber90/githubbox
-+https://codesandbox.io/s/github/dferber90/githubbox
++https://githubbox.com/dferber90/githubbox
 ```
+
+You'll then see this README on CodeSandbox.
 
 _This also works when you're on a branch, a tag or on a file's blob._
 
