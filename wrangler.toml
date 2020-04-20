@@ -1,0 +1,10 @@
+name = "githubbox"
+type = "webpack"
+account_id = "54ab4107e6546eaba296abd6810f2cc7"
+workers_dev = true
+route = ""
+zone_id = ""
+
+[site]
+bucket = "./build"
+entry-point = "workers-site"
