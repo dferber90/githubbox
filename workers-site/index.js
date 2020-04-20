@@ -57,7 +57,7 @@ async function handleEvent(event) {
   let location = getCodeSandboxLocation(path);
 
   if (location) {
-    return Response.redirect(location, 302 /* use 301 once its working */);
+    return Response.redirect(location, DEBUG ? 302 : 301);
   }
 
   try {
