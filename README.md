@@ -16,7 +16,7 @@ Now you want to explore the code of that repo in a [CodeSandbox](https://codesan
 
 Just add **box** to your url and the repo will open there.
 
-## Try it
+## Try
 
 As you're on GitHub at the moment, you can add `box` to the current URL.
 
