@@ -5,7 +5,7 @@ Quickly open any GitHub repo in CodeSandbox
 3. There's no step three
 
 <p align="center">
-  <img src="./docs/demo.gif" width="460">
+  <img src="./docs/demo.gif" width="718">
 </p>
 
 ## What
