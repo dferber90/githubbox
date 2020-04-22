@@ -35,6 +35,26 @@ If you were too lazy for the step above, you can click on this link instead:
 
 [githubbox.com/dferber90/githubbox](https://githubbox.com/dferber90/githubbox)
 
+## Badge
+
+You can add an _"**Open in CodeSandbox**"_ badge to your README if you own a repo.
+
+This allows anybody to open your repo on CodeSandbox with one click.
+
+#### Example
+
+[![Open in CodeSandbox](https://img.shields.io/badge/Open%20in-CodeSandbox-blue?style=flat-square&logo=codesandbox)](https://githubbox.com/dferber90/githubbox)
+
+#### Markdown
+
+```markdown
+[![Open in CodeSandbox](https://img.shields.io/badge/Open%20in-CodeSandbox-blue?style=flat-square&logo=codesandbox)](https://githubbox.com/dferber90/githubbox)
+```
+
+Replace `https://githubbox.com/dferber90/githubbox` with your own githubbox.com URL.
+
+See [shields.io](https://shields.io/) for badge style customization options.
+
 ## Development
 
 See [DEVELOPMENT.md](./docs/development.md).
