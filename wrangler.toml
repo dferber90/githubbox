@@ -5,10 +5,6 @@ workers_dev = true
 route = ""
 zone_id = ""
 
-[site]
-bucket = "./src"
-entry-point = "workers-site"
-
 [env.production]
 # The ID of your domain you're deploying to
 zone_id = "a4b67eb37bea4ba8fa9026911195fa39"

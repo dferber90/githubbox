@@ -31,7 +31,7 @@ _This also works when you're on a branch, a tag or on a file's blob._
 
 ## Lazy
 
-If you were too lazy for the step above, you can click on this link instead:
+If you don't want to type, you can click on this link instead:
 
 [githubbox.com/dferber90/githubbox](https://githubbox.com/dferber90/githubbox)
 

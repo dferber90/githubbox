@@ -1,14 +1,31 @@
 {
-  "name": "githubbox",
-  "version": "0.1.0",
   "private": true,
-  "dependencies": {},
+  "name": "githubbox",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Open any GitHub repo in CodeSandbox",
+  "main": "src/index.js",
   "scripts": {
-    "start": "serve src",
+    "test": "node --experimental-modules src/index.spec.js | tap-spec",
+    "format": "prettier --write '**/*.{js,css,json,md}'",
+    "prepub": "yarn test",
     "pub": "wrangler publish",
+    "prepub:prod": "yarn test",
     "pub:prod": "wrangler publish --env production"
   },
+  "author": "Dominik Ferber <dominik.ferber@gmail.com>",
+  "license": "MIT",
   "devDependencies": {
-    "serve": "11.3.0"
+    "prettier": "^1.18.2",
+    "tap-spec": "5.0.0",
+    "tape": "4.13.2",
+    "wrangler": "0.0.2"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": false,
+    "trailingComma": "all",
+    "tabWidth": 2,
+    "printWidth": 80
   }
 }
