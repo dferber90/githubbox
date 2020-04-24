@@ -4,20 +4,10 @@ The site uses Cloudflare Workers to redirect visitors to CodeSandbox.
 
 See [redirect.md](./redirect.md) for the redirect setup.
 
-## Running locally
-
-```
-yarn start
-```
-
-Then open `http://localhost:5000`.
-
-> You'll probably only be redirected to github.com anyways, since that is all `index.html' does.
-
 ## Editing the worker
 
-To edit the worker, open `workers-site/index.js`.
-The `workers-site` directory contains the Cloudflare worker.
+To edit the worker, open `src/index.js`.
+The `src` directory contains the Cloudflare worker.
 
 ## Building and publishing a new version
 
