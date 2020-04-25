@@ -10,11 +10,11 @@ async function handleEvent(event) {
 
   if (path === '/robots.txt')
     return new Response(
-      stripIndent`
-        # https://www.robotstxt.org/robotstxt.html
-        User-agent: *
-        Disallow:
-      `,
+      [
+        '# https://www.robotstxt.org/robotstxt.html',
+        'User-agent: *',
+        'Disallow:',
+      ].join('\n'),
       { status: 200 },
     )
 
