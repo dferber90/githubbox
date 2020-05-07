@@ -62,3 +62,7 @@ See [DEVELOPMENT.md](./docs/development.md).
 ## Who
 
 [@dferber90](https://twitter.com/dferber90)
+
+## Supported by CodeSandbox
+
+This project is [officially supported](https://codesandbox.io/docs/importing#using-githubboxcom) and sponsored by CodeSandbox. 
