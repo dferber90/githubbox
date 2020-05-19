@@ -11,12 +11,20 @@ test('repo root', t => {
     getCodeSandboxLocation('/zeit/ms'),
     'https://codesandbox.io/s/github/zeit/ms',
   )
+  t.equals(
+    getCodeSandboxLocation('/zeit/ms/'),
+    'https://codesandbox.io/s/github/zeit/ms',
+  )
   t.end()
 })
 
 test('repo branch', t => {
   t.equals(
     getCodeSandboxLocation('/zeit/ms/tree/master'),
+    'https://codesandbox.io/s/github/zeit/ms/tree/master',
+  )
+  t.equals(
+    getCodeSandboxLocation('/zeit/ms/tree/master/'),
     'https://codesandbox.io/s/github/zeit/ms/tree/master',
   )
   t.end()
@@ -27,6 +35,10 @@ test('repo tree', t => {
     getCodeSandboxLocation('/zeit/ms/tree/2.1.1'),
     'https://codesandbox.io/s/github/zeit/ms/tree/2.1.1',
   )
+  t.equals(
+    getCodeSandboxLocation('/zeit/ms/tree/2.1.1/'),
+    'https://codesandbox.io/s/github/zeit/ms/tree/2.1.1',
+  )
   t.end()
 })
 
@@ -34,6 +46,12 @@ test('repo commit', t => {
   t.equals(
     getCodeSandboxLocation(
       '/zeit/ms/tree/7920885eb232fbe7a5efdab956d3e7c507c92ddf',
+    ),
+    'https://codesandbox.io/s/github/zeit/ms/tree/7920885eb232fbe7a5efdab956d3e7c507c92ddf',
+  )
+  t.equals(
+    getCodeSandboxLocation(
+      '/zeit/ms/tree/7920885eb232fbe7a5efdab956d3e7c507c92ddf/',
     ),
     'https://codesandbox.io/s/github/zeit/ms/tree/7920885eb232fbe7a5efdab956d3e7c507c92ddf',
   )
@@ -69,5 +87,7 @@ test('commit with file', t => {
 test('pages which are not repos', t => {
   t.equals(getCodeSandboxLocation('/issues'), null)
   t.equals(getCodeSandboxLocation('/zeit/ms/stargazers'), null)
+  t.equals(getCodeSandboxLocation('/issues/'), null)
+  t.equals(getCodeSandboxLocation('/zeit/ms/stargazers/'), null)
   t.end()
 })

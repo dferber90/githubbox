@@ -1,7 +1,10 @@
 // extracted so it can be tested without requiring the worker runtime
 export function getCodeSandboxLocation(path) {
   const prefix = 'https://codesandbox.io/s/github/'
-  const parts = path.substr(1).split('/')
+  const parts = path
+    .substr(1)
+    .split('/')
+    .filter(Boolean)
 
   if (parts.length === 0) return null
   if (parts.length === 1) return null
