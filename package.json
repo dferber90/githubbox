@@ -19,7 +19,7 @@
     "prettier": "^1.18.2",
     "tap-spec": "5.0.0",
     "tape": "4.13.2",
-    "wrangler": "0.0.2"
+    "wrangler": "2.20.1"
   },
   "prettier": {
     "singleQuote": true,
