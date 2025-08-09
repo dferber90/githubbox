@@ -1,0 +1,18 @@
+Subscription-Dashboard-GoogleOne/
+│
+├── 📁 data/
+│   ├── subscribers.csv
+│   ├── payments.csv
+│   └── plans.csv
+│
+├── 📁 visuals/
+│   └── dashboard-screenshot.png
+│
+├── 📁 sql/
+│   ├── churn_rate.sql
+│   ├── mrr.sql
+│   └── arpu.sql
+│
+├── Subscription_Dashboard.pbix   <-- (Power BI file)
+├── README.md
+└── LICENSE (optional)
