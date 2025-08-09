@@ -1,0 +1,26 @@
+# 📊 Google One-Style Subscription Dashboard
+
+A subscription analytics dashboard that tracks subscriber growth, churn, revenue, and ARPU using SQL + Power BI — built to simulate Google One’s financial KPIs.
+
+---
+
+## 🔧 Tech Stack
+- SQL (querying and data transformation)
+- Power BI (dashboard + DAX)
+- Excel (mock data simulation)
+- GitHub (version control and publishing)
+
+---
+
+## 📈 Key KPIs Tracked
+- Active Subscribers (monthly)
+- Monthly Recurring Revenue (MRR)
+- Churn Rate
+- Average Revenue per User (ARPU)
+- Subscriber Growth Rate
+- Regional Performance Breakdown
+
+---
+
+## 📂 Project Structure
+
