@@ -1,4 +1,32 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "framework": "go"
+  "outputDirectory": "public",
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "https://github.com/dferber90/githubbox",
+      "statusCode": 302
+    },
+    {
+      "source": "/index.html",
+      "destination": "https://github.com/dferber90/githubbox",
+      "statusCode": 302
+    },
+    {
+      "source": "/:owner/:repo/blob/:ref/:file+",
+      "destination": "https://codesandbox.io/s/github/:owner/:repo/tree/:ref?file=/:file+",
+      "statusCode": 302
+    },
+    {
+      "source": "/:owner/:repo/tree/:rest+",
+      "destination": "https://codesandbox.io/s/github/:owner/:repo/tree/:rest+",
+      "statusCode": 302
+    },
+    {
+      "source": "/:owner/:repo",
+      "destination": "https://codesandbox.io/s/github/:owner/:repo",
+      "statusCode": 302
+    }
+  ]
 }
