@@ -65,4 +65,4 @@ See [DEVELOPMENT.md](./docs/development.md).
 
 ## Supported by CodeSandbox
 
-This project is [officially supported](https://codesandbox.io/docs/importing#using-githubboxcom) and sponsored by CodeSandbox. 
+This project is [officially supported](https://codesandbox.io/docs/importing#using-githubboxcom) and sponsored by CodeSandbox.
