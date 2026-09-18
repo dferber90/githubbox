@@ -27,9 +27,9 @@ first match wins:
 | `/:owner/:repo`                 | the sandbox for the repo's default branch  |
 
 Anything else falls through to a 404, which is what we want for paths like
-`/issues` or `/zeit/ms/stargazers`.
+`/issues` or `/vercel/ms/stargazers`.
 
-The `+` modifier requires at least one segment, so `/zeit/ms/tree` alone is a
+The `+` modifier requires at least one segment, so `/vercel/ms/tree` alone is a
 404 rather than a redirect to an empty ref.
 
 ## Running locally
@@ -38,7 +38,7 @@ The `+` modifier requires at least one segment, so `/zeit/ms/tree` alone is a
 vercel dev
 ```
 
-Then check http://localhost:3000/zeit/ms
+Then check http://localhost:3000/vercel/ms
 
 ## Testing
 
@@ -49,15 +49,15 @@ There is nothing to unit test, so verify against a deployment instead. Point
 BASE=https://githubbox.com
 for path in \
   / \
-  /zeit/ms \
-  /zeit/ms/ \
-  /zeit/ms/tree/main \
-  /zeit/ms/tree/2.1.1 \
-  /zeit/ms/blob/main/package.json \
-  /zeit/ms/blob/main/lib/index.js \
+  /vercel/ms \
+  /vercel/ms/ \
+  /vercel/ms/tree/main \
+  /vercel/ms/tree/2.1.1 \
+  /vercel/ms/blob/main/package.json \
+  /vercel/ms/blob/main/lib/index.js \
   /robots.txt \
   /issues \
-  /zeit/ms/stargazers
+  /vercel/ms/stargazers
 do
   echo "$path -> $(curl -sI "$BASE$path" | head -n1 | tr -d '\r')"
 done
@@ -87,10 +87,10 @@ Then check https://githubbox.com
 
 All these forms of URLs are supported.
 
-- main [githubbox.com/zeit/ms](https://githubbox.com/zeit/ms)
-- branch [githubbox.com/zeit/ms/tree/main](https://githubbox.com/zeit/ms/tree/main)
-- tree [githubbox.com/zeit/ms/tree/2.1.1](https://githubbox.com/zeit/ms/tree/2.1.1)
-- commit [githubbox.com/zeit/ms/tree/7920885eb232fbe7a5efdab956d3e7c507c92ddf](https://githubbox.com/zeit/ms/tree/7920885eb232fbe7a5efdab956d3e7c507c92ddf)
-- branch with file [githubbox.com/zeit/ms/blob/main/package.json](https://githubbox.com/zeit/ms/blob/main/package.json)
-- tree with file [githubbox.com/zeit/ms/blob/2.0.0/index.js](https://githubbox.com/zeit/ms/blob/2.0.0/index.js)
-- commit with file [githubbox.com/zeit/ms/blob/adf1eb282d29fe3c405d205a3854177b86a97c1f/index.js](https://githubbox.com/zeit/ms/blob/adf1eb282d29fe3c405d205a3854177b86a97c1f/index.js)
+- main [githubbox.com/vercel/ms](https://githubbox.com/vercel/ms)
+- branch [githubbox.com/vercel/ms/tree/main](https://githubbox.com/vercel/ms/tree/main)
+- tree [githubbox.com/vercel/ms/tree/2.1.1](https://githubbox.com/vercel/ms/tree/2.1.1)
+- commit [githubbox.com/vercel/ms/tree/7920885eb232fbe7a5efdab956d3e7c507c92ddf](https://githubbox.com/vercel/ms/tree/7920885eb232fbe7a5efdab956d3e7c507c92ddf)
+- branch with file [githubbox.com/vercel/ms/blob/main/package.json](https://githubbox.com/vercel/ms/blob/main/package.json)
+- tree with file [githubbox.com/vercel/ms/blob/2.0.0/index.js](https://githubbox.com/vercel/ms/blob/2.0.0/index.js)
+- commit with file [githubbox.com/vercel/ms/blob/adf1eb282d29fe3c405d205a3854177b86a97c1f/index.js](https://githubbox.com/vercel/ms/blob/adf1eb282d29fe3c405d205a3854177b86a97c1f/index.js)
